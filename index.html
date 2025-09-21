@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>B.Tech IT Timetable</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Logo -->
+  <div class="logo">
+    <img src="assets/logo.png" alt="College Logo">
+  </div>
+
+  <!-- Heading -->
+  <h1>B.Tech IT Timetable</h1>
+
+  <!-- Login Section -->
+  <div class="login-box">
+    <input type="text" id="regno" placeholder="Register Number">
+    <input type="password" id="password" placeholder="Password">
+    <button onclick="login()">Login</button>
+  </div>
+
+  <!-- Welcome Banner -->
+  <h2 id="welcome"></h2>
+
+  <!-- Timetable -->
+  <div id="timetable" class="hidden">
+    <table>
+      <thead>
+        <tr>
+          <th>Day</th>
+          <th>9:00 - 10:00</th>
+          <th>10:00 - 11:00</th>
+          <th>11:15 - 12:15</th>
+          <th>1:15 - 2:15</th>
+          <th>2:15 - 3:15</th>
+        </tr>
+      </thead>
+      <tbody id="table-body"></tbody>
+    </table>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
